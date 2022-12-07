@@ -50,6 +50,48 @@ a {
 
 /* Fin menu */
 
+/* Inicio main home */
+.main_home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 40px;
+    /* margin-top: 40px; */
+}
+
+.hero {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+.hero img {
+    max-width: 100%;
+}
+
+.productos_home {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 32px;
+}
+
+.producto_home {
+    min-width: 196px;
+}
+
+.producto_home__img_container {
+    display: flex;
+    align-items: center;
+    height: 242px;
+}
+
+.productos_home img {
+    width: 100%;
+    max-height: 242px;
+}
+
+/* Fin main home */
+
 /* Inicio footer */
 .footer {
     display: grid;

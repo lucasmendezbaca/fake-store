@@ -1,3 +1,8 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
 .container {
     padding: 0px 50px;
 }
@@ -54,9 +59,8 @@ a {
 .main_home {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, min-content);
     row-gap: 40px;
-    /* margin-top: 40px; */
 }
 
 .hero {
@@ -89,6 +93,18 @@ a {
     width: 100%;
     max-height: 242px;
 }
+
+/* Inicio Seccion siguenos */
+.siguenos {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+.siguenos__img {
+    display: block;
+    max-height: 310px;
+}
+/* Fin seccion siguenos */
 
 /* Fin main home */
 

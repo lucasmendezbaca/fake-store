@@ -1,3 +1,9 @@
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #000000;
+    --color-secondary-hover: #212121;
+}
+
 body {
     margin: 0px;
     overflow-x: hidden;
@@ -8,6 +14,10 @@ h2,
 h3,
 h4 {
     font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
 }
 
 .container {
@@ -316,4 +326,65 @@ video {
     flex-basis: 50%;
     box-sizing: border-box;
     padding-right: 6em;
+}
+
+/* ######################### */
+/* Login */
+.main_login {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    column-gap: 50px;
+    margin-top: 50px;
+}
+
+.main_login__login,
+.main_login__register {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.form__input_div {
+    position: relative;
+}
+
+.main_login input {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2em;
+}
+
+.main_login label {
+    position: absolute;
+    left: calc(50% - 250px);
+}
+
+.main_login input:focus {
+    outline: none;
+}
+
+.main_login input:focus label {
+    font-size: 0.8em;
+    transform: translateY(-20px);
+    transition: all 0.3s;
+}
+
+.main_login button {
+    background-color: var(--color-secondary);
+    border: none;
+    color : var(--color-primary);
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5em 0em;
+}
+
+.main_login button:hover {
+    background-color: var(--color-secondary-hover);
+    transition: all 0.3s;
 }

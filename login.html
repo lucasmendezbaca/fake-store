@@ -18,7 +18,7 @@
         </div>
 
         <div class="header__secondary_menu">
-            <a href="categoria.html">CHRISMAS SELECTION</a>
+            <a href="">CHRISMAS SELECTION</a>
             <a href="">ABRIGOS Y CHAQUETAS</a>
             <a href="">IDEAS PARA REGALAR</a>
             <a href="">VESTIDOS Y MONOS</a>
@@ -27,19 +27,52 @@
         </div>
     </header>
     <!-- Fin Header -->
+    <div class="main_login container">
+        <div class="main_login__login">
+            <h2>INICIAR SESIÓN</h2>
 
-    <div class="contenedor_principal">
-        <div class="detalle_producto">
-            <div class="detalle_producto__img">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="imagen del producto">
+            <div class="form">
+                <div class="form__input_div">
+                    <label for="email_login">Email</label>
+                    <input type="email" name="email_login" id="email_login">
+                </div>
+                <div class="form__input_div">
+                    <label for="password_login">Contraseña</label>
+                    <input type="password" name="password_login" id="password_login">
+                </div>
+                <button>INICIAR SESIÓN</button>
             </div>
-            <div class="detalle_producto__descripcion">
-                <h1 class="detalle_producto__nombre">VESTIDO DE PUNTO CON CUELLO EN V</h1>
-                <p class="detalle_producto__descr">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</p>
-                <p class="detalle_producto__precio">Precio: <span>$ 1.000</span></p>
-                <p class="detalle_producto__categoria">Categoria: <span>cualquiera</span></p>
-                <p><input type="number" name="cantidad" id="cantidad" value="1"></p>
-                <button class="boton boton--add_carrito">AÑADIR AL CARRITO</button>
+        </div>
+
+        <div class="main_login__register">
+            <h2>REGISTRARSE</h2>
+
+            <div class="form">
+                <div class="form__input_div">
+                    <label for="name_register">Nombre</label>
+                    <input type="text" name="name_register" id="name_register">
+                </div>
+
+                <div class="form__input_div">
+                    <label for="email_register">Email</label>
+                    <input type="email" name="email_register" id="email_register">
+                </div>
+
+                <div class="form__input_div">
+                    <label for="tel_register">Teléfono</label>
+                    <input type="tel" name="tel_register" id="tel_register">
+                </div>
+
+                <div class="form__input_div">
+                    <label for="password_register">Contraseña</label>
+                    <input type="password" name="password_register" id="password_register">
+                </div>
+
+                <div class="form__input_div">
+                    <label for="password_register_comfirm">Confirma la contraseña</label>
+                    <input type="password" name="password_register_comfirm" id="password_register_comfirm">
+                </div>
+                <button>REGISTRARSE</button>
             </div>
         </div>
     </div>
@@ -84,6 +117,7 @@
                 <a href="https://www.linkedin.com/in/lucas-m%C3%A9ndez-baca-48851123a/"><img src="img/linkedin-square.svg" alt="icono de linkedin"></a>
             </div>
         </section>
+
     </footer>
     <!-- Fin Footer -->
 </body>
